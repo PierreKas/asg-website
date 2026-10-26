@@ -26,9 +26,9 @@ export const navItems = [
   { label: "Mission", href: "#mission" },
   { label: "Domaines", href: "#domaines" },
   { label: "Membres", href: "#membres" },
-  { label: "Gouvernance", href: "#gouvernance" },
-  { label: "Documents", href: "#documents" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Gouvernance", href: "#gouvernance" },
+  // { label: "Documents", href: "#documents" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 export const hero = {
@@ -131,8 +131,14 @@ export const members = {
     },
   ],
   steps: [
-    { title: "Remplir le formulaire", text: "En ligne, depuis le site de l'ONG." },
-    { title: "Accepter les statuts", text: "Lire et accepter les conditions statutaires." },
+    {
+      title: "Remplir le formulaire",
+      text: "En ligne, depuis le site de l'ONG.",
+    },
+    {
+      title: "Accepter les statuts",
+      text: "Lire et accepter les conditions statutaires.",
+    },
     {
       title: "Régler les cotisations",
       text: "Par transfert ou virement bancaire. Les montants sont fixés en Assemblée Générale.",
@@ -163,17 +169,37 @@ export const governance = {
   ],
   teamTitle: "Conseil d'Administration",
   team: [
-    { name: "Néhémie KAMBALE VUYINGO", role: "Président", profession: "Médecin" },
-    { name: "Grégoire THEMBO NDALEGHANA", role: "Vice-Président", profession: "Agronome" },
+    {
+      name: "Néhémie KAMBALE VUYINGO",
+      role: "Président",
+      profession: "Médecin",
+    },
+    {
+      name: "Grégoire THEMBO NDALEGHANA",
+      role: "Vice-Président",
+      profession: "Agronome",
+    },
     {
       name: "Eddie MUTUMBA KAZIMOTO",
       role: "Secrétaire Général",
       profession: "Ingénieur électromécanicien",
     },
-    { name: "Guillaume KAYA MICHEL", role: "Vice-secrétaire Général", profession: "Médecin" },
+    {
+      name: "Guillaume KAYA MICHEL",
+      role: "Vice-secrétaire Général",
+      profession: "Médecin",
+    },
     { name: "Maua ROSETTE MADELEINE", role: "Trésorier", profession: "" },
-    { name: "Raïssa MASENGO KAHOZI", role: "Commissaire aux comptes", profession: "" },
-    { name: "Augustin BASOLE MUSOLE", role: "Conseiller Juridique", profession: "Juriste expert" },
+    {
+      name: "Raïssa MASENGO KAHOZI",
+      role: "Commissaire aux comptes",
+      profession: "",
+    },
+    {
+      name: "Augustin BASOLE MUSOLE",
+      role: "Conseiller Juridique",
+      profession: "Juriste expert",
+    },
     {
       name: "Jean Claude BUSHIRI MAHUNGU",
       role: "Administrateur, relations publiques",
@@ -193,10 +219,19 @@ export const resources = {
   title: "D'où viennent les moyens de l'ASG",
   lead: "Les fonds servent à réaliser les projets ou à faire fonctionner l'ONG. L'exercice commence le 1er janvier et se termine le 31 décembre. Les comptes annuels sont soumis à l'Assemblée Générale.",
   items: [
-    { title: "Cotisations", text: "Montant fixé par le règlement intérieur ou l'Assemblée Générale" },
-    { title: "Dons et legs", text: "De toute personne physique ou morale intéressée" },
+    {
+      title: "Cotisations",
+      text: "Montant fixé par le règlement intérieur ou l'Assemblée Générale",
+    },
+    {
+      title: "Dons et legs",
+      text: "De toute personne physique ou morale intéressée",
+    },
     { title: "Subventions", text: "Publiques ou privées" },
-    { title: "Produits d'activités", text: "Revenus des activités et du patrimoine" },
+    {
+      title: "Produits d'activités",
+      text: "Revenus des activités et du patrimoine",
+    },
   ],
 };
 

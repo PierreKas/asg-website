@@ -6,14 +6,16 @@ const HeroSection = () => (
     <div className="max-w-[68rem] mx-auto px-4">
       <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
         <div>
-          <div className="font-display text-[0.78rem] tracking-[0.14em] uppercase text-green font-semibold mb-2.5">
+          {/* <div className="font-display text-[0.78rem] tracking-[0.14em] uppercase text-green font-semibold mb-2.5">
             {hero.eyebrow}
-          </div>
+          </div> */}
           <h1 className="font-display font-bold text-[clamp(2.3rem,5.6vw,4.2rem)] leading-[1.12] text-blue text-balance">
             {hero.titleStart}
             <em className="not-italic text-green">{hero.titleEmphasis}</em>
           </h1>
-          <p className="mt-5 text-[1.12rem] text-muted max-w-[44rem]">{hero.lead}</p>
+          <p className="mt-5 text-[1.12rem] text-muted max-w-[44rem]">
+            {hero.lead}
+          </p>
           <div className="flex gap-3 flex-wrap mt-7">
             <a
               href={hero.primaryCta.href}

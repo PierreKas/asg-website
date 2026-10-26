@@ -20,8 +20,8 @@ function App() {
         <MissionSection />
         <DomainsSection />
         <MembersSection />
-        <GovernanceSection />
-        <ResourcesSection />
+        {/* <GovernanceSection /> */}
+        {/* <ResourcesSection /> */}
         {/* <DocumentsSection /> */}
         {/* <ContactSection /> */}
       </main>
