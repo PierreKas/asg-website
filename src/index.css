@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import "tailwindcss";
+
+/*
+ * Theme: reacts to prefers-color-scheme by default, overridable via
+ * [data-theme="light"|"dark"] on <html> (ThemeToggle persists the explicit
+ * choice to localStorage "asg-theme") - mirrors the original HTML prototype
+ * exactly (Alliance Scientifique pour une Santé Globale.html).
+ */
+:root {
+  --c-bg: #ffffff;
+  --c-surface: #f1f6fb;
+  --c-surface-2: #e4edf6;
+  --c-fg: #0d2440;
+  --c-muted: #4a6079;
+  --c-line: #d3dfeb;
+  --c-blue: #074a8d;
+  --c-blue-ink: #ffffff;
+  --c-green: #4f9a12;
+  --c-green-soft: #e6f3d9;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --c-bg: #091a2e;
+    --c-surface: #0f2540;
+    --c-surface-2: #16304f;
+    --c-fg: #e8f0f8;
+    --c-muted: #9db3c9;
+    --c-line: #25415f;
+    --c-blue: #6fb0ee;
+    --c-blue-ink: #07203a;
+    --c-green: #8fd14b;
+    --c-green-soft: #1c3a1f;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --c-bg: #091a2e;
+  --c-surface: #0f2540;
+  --c-surface-2: #16304f;
+  --c-fg: #e8f0f8;
+  --c-muted: #9db3c9;
+  --c-line: #25415f;
+  --c-blue: #6fb0ee;
+  --c-blue-ink: #07203a;
+  --c-green: #8fd14b;
+  --c-green-soft: #1c3a1f;
+  color-scheme: dark;
+}
+
+@theme {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-fg: var(--c-fg);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-blue: var(--c-blue);
+  --color-blue-ink: var(--c-blue-ink);
+  --color-green: var(--c-green);
+  --color-green-soft: var(--c-green-soft);
+
+  --color-primary: var(--c-blue);
+  --color-secondary: var(--c-fg);
+  --color-soft-background: var(--c-surface);
+
+  --font-display: "Outfit", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ASG - Alliance Scientifique pour une santé Globale",
+  "short_name": "ASG",
+  "description": "Chercher pour comprendre ; comprendre pour agir ; agir pour une santé globale.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#074a8d",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
